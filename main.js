@@ -19,11 +19,52 @@
 // console.log(strLength('я ооооооооооочень большоfgfdgdfgdfgdfgfddеее слооооово'));
 
 
-const strLength = str => {
-  let current = '';
-  str.split(' ').forEach(item => current.length > item.length ? current : current = item);
-  return current
-}
+// const strLength1 = str => {
+//   let current = '';
+//   str.split(' ').forEach(item => current.length > item.length ? current : current = item);
+//   return current
+// }
 
 
-console.log(strLength('меня зовууут Егорf fsdkfsdkljfsdkfsjdkfsdjfsldkfjksdl wq'));
+// console.log(strLength1('меня зовууут Егорf fsdkfsdkljfsdkfsjdkfsdjfsldkfjksdl wq'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const zeroZero = num => {
+//   let cur = 0
+//   const arr = num.toString(2).split('1').filter(item => item != '').forEach(item => cur < item.length ? cur = item.length : cur)
+
+//   return cur
+// }
+
+// console.log(zeroZero(771));
+
+
+
+const arr = [[1,2,3], [99,73,25], [0, 1993, 6]]
+
+
+const maxNumArr = array => arr.map(item => Math.max(...item))
+
+console.log(maxNumArr(arr));
