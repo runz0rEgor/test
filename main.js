@@ -65,6 +65,7 @@
 const arr = [[1,2,3], [99,73,25], [0, 1993, 6]]
 
 
-const maxNumArr = array => arr.map(item => Math.max(...item))
+const maxNumArr = array =>  array.map(item => item.reduce((acc, item) => acc < item ? acc = item : acc ))
+
 
 console.log(maxNumArr(arr));
